@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Text Editor Documentation</title>
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <main>
+    <h1>Text Editor Documentation</h1>
+    <p>
+      Every now and then, in the SalemModLoader discord server, people will be like:
+    </p>
+    <blockquote>
+      <span class="name">Townie123:</span>
+      <p class="message">
+        Does anybody know how to use the TextEditor plugin?
+      </p>
+    </blockquote>
+    <p>
+    or
+    </p>
+    <blockquote>
+      <span class="name">Townie123:</span>
+      <p class="message">
+        How can I change text in ToS2?
+      </p>
+    </blockquote>
+    <p>
+      So, here is how you do it:
+    </p>
+    <p>
+      1. Dump the XML of the game through the Mod Actions menu.
+      2. Open the dumped XML of your locale (i.e. StringTable.xx-XX.xml).
+      3. Use Control + F to find the line you are looking for. You may also go into the settings of the plugin and enable "Show Keys"
+      4. Copy the ENTIRE line, including the <entry ...> and </entry> tags
+      5. In the "Custom" folder (in the same directory the "Dumped" folder is in), create a new file with the same name as the dumped file (i.e. StringTable.XX-XX.xml)
+      6. Paste in your entry and change your text.
+      7. Surround it with <StringTable> on the line above and </StringTable> on the line below.
+    </p>
+    <p>
+      Here is an example file:
+    </p>
+    <blockquote>
+      <span class="name">StringTable.en-US.xml</span>
+      <p class="message">
+        <StringTable>
+        <Entry key="CINE_ROLE_REVEAL_ROLE">
+          <![CDATA[ Go get 'em, <shake a=0.3> %role%! ]]>
+        <Entry key="CINE_TRIBUNAL">
+          	<![CDATA[ %name% started a vote on who gets to become a human piñata! ]]>
+        </Entry>
+        <Entry key="GAME_1" style="bad_alert">This dude is up to some shit...</Entry>
+        <Entry key="GAME_287" style="lover_alert">Romeo! Romeo! Wherefore art thou Romeo?</Entry>
+        <Entry key="CUSTOM_LOOKUP_FULL_MOON" style="fullmoon">You look at the moon, in it's beauty, it's fullness... just kidding! you're probably dead if there's a [[#51]] or a level one [[#42]].</Entry>
+        <Entry key="GUI_GAME_YOU_DIED">gg ez scrub</Entry>
+        </StringTable>
+      </p>
+    </blockquote>
+    <p>
+      Some things to note: 
+    </p>
+    <p>
+      1. Do not change anything surrounded in <> or "CDATA"
+      2. Anything in double square brackets is a reference [[:X]] is a keyword, and [[#X]] is a role. Because of this, no keywords or rols can be in your search with Control + F.
+    </p>
+    <p>
+      And with that, happy searching!
+    </p>
+    <p>
+      Alternatively, it can be seen as..
+    </p>
+</body>
+</html>
