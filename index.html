@@ -32,12 +32,12 @@
     </p>
     <p>
       1. Dump the XML of the game through the Mod Actions menu.
-      2. Open the dumped XML of your locale (i.e. StringTable.xx-XX.xml).
-      3. Use Control + F to find the line you are looking for. You may also go into the settings of the plugin and enable "Show Keys"
-      4. Copy the ENTIRE line, including the <entry ...> and </entry> tags
-      5. In the "Custom" folder (in the same directory the "Dumped" folder is in), create a new file with the same name as the dumped file (i.e. StringTable.XX-XX.xml)
-      6. Paste in your entry and change your text.
-      7. Surround it with <StringTable> on the line above and </StringTable> on the line below.
+      \n2. Open the dumped XML of your locale (i.e. StringTable.xx-XX.xml).
+      \n3. Use Control + F to find the line you are looking for. You may also go into the settings of the plugin and enable "Show Keys"
+      \n4. Copy the ENTIRE line, including the <entry ...> and </entry> tags
+      \n5. In the "Custom" folder (in the same directory the "Dumped" folder is in), create a new file with the same name as the dumped file (i.e. StringTable.XX-XX.xml)
+      \n6. Paste in your entry and change your text.
+      \n7. Surround it with <StringTable> on the line above and </StringTable> on the line below.
     </p>
     <p>
       Here is an example file:
@@ -46,16 +46,16 @@
       <span class="name">StringTable.en-US.xml</span>
       <p class="message">
         <StringTable>
-        <Entry key="CINE_ROLE_REVEAL_ROLE">
-          <![CDATA[ Go get 'em, <shake a=0.3> %role%! ]]>
-        <Entry key="CINE_TRIBUNAL">
-          	<![CDATA[ %name% started a vote on who gets to become a human piñata! ]]>
-        </Entry>
-        <Entry key="GAME_1" style="bad_alert">This dude is up to some shit...</Entry>
-        <Entry key="GAME_287" style="lover_alert">Romeo! Romeo! Wherefore art thou Romeo?</Entry>
-        <Entry key="CUSTOM_LOOKUP_FULL_MOON" style="fullmoon">You look at the moon, in it's beauty, it's fullness... just kidding! you're probably dead if there's a [[#51]] or a level one [[#42]].</Entry>
-        <Entry key="GUI_GAME_YOU_DIED">gg ez scrub</Entry>
-        </StringTable>
+        \n<Entry key="CINE_ROLE_REVEAL_ROLE">
+        \n  <![CDATA[ Go get 'em, <shake a=0.3> %role%! ]]>
+        \n<Entry key="CINE_TRIBUNAL">
+        \n  	<![CDATA[ %name% started a vote on who gets to become a human piñata! ]]>
+        \n</Entry>
+        \n<Entry key="GAME_1" style="bad_alert">This dude is up to some shit...</Entry>
+        \n<Entry key="GAME_287" style="lover_alert">Romeo! Romeo! Wherefore art thou Romeo?</Entry>
+        \n<Entry key="CUSTOM_LOOKUP_FULL_MOON" style="fullmoon">You look at the moon, in it's beauty, it's fullness... just kidding! you're probably dead if there's a [[#51]] or a level one [[#42]].</Entry>
+        \n<Entry key="GUI_GAME_YOU_DIED">gg ez scrub</Entry>
+        \n</StringTable>
       </p>
     </blockquote>
     <p>
@@ -63,13 +63,10 @@
     </p>
     <p>
       1. Do not change anything surrounded in <> or "CDATA"
-      2. Anything in double square brackets is a reference [[:X]] is a keyword, and [[#X]] is a role. Because of this, no keywords or rols can be in your search with Control + F.
+      \n2. Anything in double square brackets is a reference [[:X]] is a keyword, and [[#X]] is a role. Because of this, no keywords or rols can be in your search with Control + F.
     </p>
     <p>
       And with that, happy searching!
-    </p>
-    <p>
-      Alternatively, it can be seen as..
     </p>
 </body>
 </html>
