@@ -32,7 +32,7 @@ body {
   font-family: "Open Sans";
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 0px) {
   main {
     margin: 20px 0;
   }
