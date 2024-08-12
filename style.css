@@ -23,7 +23,7 @@ body {
   grid-template-rows: 1fr auto;
 
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
   line-height: 1.6;
   font-size: 18px;
   color: var(--dark);
